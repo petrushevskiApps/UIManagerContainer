@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace MenuManager.Scripts.Adapters
 {
-    public class LevelController: IUILevelControlled
+    public class LevelController: IUILevelController
     {
-        public void StartNextLevel()
+        public void StartLevel()
         {
             Debug.Log("StartNextLevel");
         }
@@ -28,6 +28,11 @@ namespace MenuManager.Scripts.Adapters
         public void CollectDoubleReward()
         {
             Debug.Log("CollectDoubleReward");
+        }
+
+        public void LeaveLevel()
+        {
+            Debug.Log("Leave Level");
         }
     }
 }

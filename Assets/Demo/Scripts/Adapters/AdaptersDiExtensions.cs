@@ -25,7 +25,7 @@ namespace MenuManager.Scripts.Adapters
         public static void BindLevelControllerDependencies(this DiContainer container)
         {
             container
-                .Bind<IUILevelControlled>()
+                .Bind<IUILevelController>()
                 .To<LevelController>()
                 .AsSingle();
         }
